@@ -136,6 +136,28 @@
             font-weight: 400;
         }
 
+        /* Estilos para la tabla de horarios */
+        .tabla-horarios {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1.5rem;
+        }
+
+        .tabla-horarios th, .tabla-horarios td {
+            border: 1px solid #ddd;
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        .tabla-horarios th {
+            background-color: #6b46c1; /* Morado vibrante */
+            color: white;
+        }
+
+        .tabla-horarios tr:nth-child(even) {
+            background-color: #f9f9f9; /* Fondo alternativo */
+        }
+
         /* Responsive adjustments */
         @media (max-width: 768px) {
             section {
@@ -191,6 +213,30 @@
             <li>Teléfono: 984563214</li>
             <li>Dirección: Jr. Arequipa N° 686, Huancayo</li>
         </ul>
+        <!-- Tabla de horarios -->
+        <h3>Horario Laboral</h3>
+        <table class="tabla-horarios">
+            <thead>
+                <tr>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes a Viernes</td>
+                    <td>8:30 AM - 6:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Sábados</td>
+                    <td>8:30 AM - 6:30 PM</td>
+                </tr>
+                <tr>
+                    <td>Domingos</td>
+                    <td>Descanso</td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section id="normas">
